@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./kanye3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.kanye-div {
+  width: 450px;
+  height: 600px;
+  color: white;
+  font-weight: bolder;
+  /* box-shadow: 20px 20px 20px white; */
+  background-image: url("./Kanye2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.kanye-div:hover {
+  flex-grow: 0.2;
+  transition: all 0.5s;
+}
+p {
+  color: #c84f4d;
+  font-size: x-large;
+}
+button {
+  background-image: url("./Chick-fil-A-Logo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100px;
+  height: 45px;
+  border-radius: 20px;
+}
