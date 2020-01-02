@@ -13,7 +13,7 @@ const KanyeQuote = props => {
         {!props.quote && !props.isFetching && (
           <p> Closed on sunday! You're my Chic-fil-a!!! </p>
         )}
-        {props.isFetching && <ClipLoader color={"red"} timeout={4000} />}
+        {props.isFetching && <ClipLoader color={"red"} />}
         {props.quote && <p>"{props.quote}"</p>}
       </div>
       <div>

@@ -6,13 +6,15 @@ export const FETCH_QUOTE_FAILURE = "FETCH_QUOTE_FAILURE";
 
 export const getQuote = () => dispatch => {
   dispatch({ type: FETCH_QUOTE_START });
-  axios
-    .get("https://api.kanye.rest")
-    .then(res => {
-      console.log(res);
-      dispatch({ type: FETCH_QUOTE_SUCCESS, payload: res.data.quote });
-    })
-    .catch(err => {
-      dispatch({ type: FETCH_QUOTE_FAILURE, payload: err.response });
-    });
+  setTimeout(() => {
+    axios
+      .get("https://api.kanye.rest")
+      .then(res => {
+        console.log(res);
+        dispatch({ type: FETCH_QUOTE_SUCCESS, payload: res.data.quote });
+      })
+      .catch(err => {
+        dispatch({ type: FETCH_QUOTE_FAILURE, payload: err.response });
+      });
+  }, 1800);
 };
